@@ -16,6 +16,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function changeLanguage(lang) {
+            var url = "";
+            if (lang == "ko") {
+                url = "index.html";
+            } else if (lang === "en") {
+                url = "ENmain.html"
+                window.location.href = url;
+            }
+        }
+    </script>
 
 </head>
 <body id="page-top">
@@ -42,6 +53,18 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>-->
                 </ul>
             </div>
+            <!--다국어페이지 국기-->
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" on click="changeLanguage('ko')">
+                        <img src="assets/img/headers/ko_flag.png" style="width: 20px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ENmain.html" on click="changeLanguage('eg')">
+                        <img src="assets/img/headers/en_flag.png" style="width: 20px;">
+                    </a>
+                </li>
         </div>
     </nav>
 </header>
