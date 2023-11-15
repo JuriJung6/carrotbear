@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>주식회사 제주캐롯베어 소식</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function changeLanguage(lang) {
+            var url = "";
+            if (lang == "ko") {
+                url = "index.html";
+            } else if (lang === "en") {
+                url = "ENmain.html"
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.png" alt="..."
+                                                       style="width: 100px; height: 70px; max-width:100%;"/></a>
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <!--다국어페이지 국기-->
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" on click="changeLanguage('ko')">
+                    <img src="assets/img/headers/ko_flag.png" style="width: 20px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ENmain.html" on click="changeLanguage('eg')">
+                    <img src="assets/img/headers/en_flag.png" style="width: 20px;">
+                </a>
+            </li>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="ENabout.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ENproducts.html">Production</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ENnews.html">News</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="group.html">GROUP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>-->
+                </ul>
+            </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead-project">
+    <div class="container">
+    </div>
+</header>
+<!-- Portfolio Grid-->
+<section class="page-section bg-light" id="projects">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">제주캐롯베어 소식</h2>
+            <h3 class="section-subheading text-muted">NEWS</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 1-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/news1.jpg" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">제주당근</div>
+                        <div class="portfolio-caption-subheading text-muted">다른 당근보다 달다?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 2-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/news2.jpg" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">제조 과정</div>
+                        <div class="portfolio-caption-subheading text-muted">청결한 시설과 꼼꼼한 제조과정</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/news3.jpg" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">판매</div>
+                        <div class="portfolio-caption-subheading text-muted">공항 면세점</div>
+                    </div>
+                </div>
+            </div>
+
+</section>
+
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; JEJU CARROT BEAR LTD. 2023</div>
+
+            <div class="col-lg-8 text-lg-end">
+                <p>제주특별자치도 제주시 중앙로 250, 4층(이도이동, 견우빌딩)</br>
+                    Tel: 010-7149-1947</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!-- Portfolio Modals-->
+<!-- Portfolio item 1 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">제주당근</h2>
+                            <p class="item-intro text-muted">제주당근은 타지역에서 생산되는 어떠한 당근보다 향과 당도가 높습니다. </p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/n1.jpg" alt="..."/>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                닫기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 2 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">제조 과정</h2>
+                            <p class="item-intro text-muted">깨끗한 환경에서 정성을 담아 만드는 당근샌드의 과정을 확인하세요.</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/n2.jpg" alt="..."/>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                닫기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 3 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">면세점 판매</h2>
+                            <p class="item-intro text-muted">김포공항과 김해공항 국제선</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/n3.jpg" alt="..."/>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                닫기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--    백그라운드 이미지 슬라이드-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
