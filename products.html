@@ -15,6 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        function changeLanguage(lang) {
+            var url = "";
+            if (lang == "ko") {
+                url = "index.html";
+            } else if (lang === "en") {
+                url = "ENmain.html"
+                window.location.href = url;
+            }
+        }
+    </script>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -29,7 +40,16 @@
                 Menu
                 <i class="fas fa-bars ms-1"></i>
             </button>
-             <!--다국어페이지 국기-->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">회사소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">제품소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">소식</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="group.html">GROUP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>-->
+                </ul>
+            </div>
+            <!--다국어페이지 국기-->
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" on click="changeLanguage('ko')">
@@ -41,15 +61,6 @@
                         <img src="assets/img/headers/en_flag.png" style="width: 20px;">
                     </a>
                 </li>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="about.html">회사소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">제품소개</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">소식</a></li>
-                    <!--<li class="nav-item"><a class="nav-link" href="group.html">GROUP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>-->
-                </ul>
-            </div>
         </div>
     </nav>
 </div>
